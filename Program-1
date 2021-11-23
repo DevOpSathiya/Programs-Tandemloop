@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main() {
+  char type_of_operation;
+  double a, b;
+  printf("Enter an type_of_operation (+, -, *, /): ");
+  scanf("%c", &type_of_operation);
+  printf("Enter two inputs: ");
+  scanf("%lf %lf", &a, &b);
+  
+  
+
+  switch (type_of_operation) {
+    case '+':
+      printf("%.1lf + %.1lf = %.1lf", a, b, a + b);
+      break;
+    case '-':
+      printf("%.1lf - %.1lf = %.1lf", a, b, a - b);
+      break;
+    case '*':
+      printf("%.1lf * %.1lf = %.1lf", a, b, a * b);
+      break;
+    case '/':
+      printf("%.1lf / %.1lf = %.1lf", a, b, a / b);
+      break;
+    // default condition will run when the condition fails in the switch case
+    default:
+      printf("Error! type_of_operation is not valid");
+  }
+
+  return 0;
+}
