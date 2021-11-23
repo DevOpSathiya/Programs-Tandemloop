@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+  int n;
+  int res=1;
+  printf("Enter the limit of series number ");
+  scanf("%d", &n);
+  
+  for(int i=0;i<n;i++){
+      printf("%d ",res);
+      res=res+2;
+  }
+  return 0;
+}
